@@ -14,3 +14,5 @@ ENABLE_LINTERS: # If you use ENABLE_LINTERS variable, all other linters will be 
 #DISABLE_ERRORS_LINTERS:
   #- PYTHON_BANDIT
 #PRINT_ALL_FILES: false
+PRE_COMMANDS: 
+  - command: "terraform init -backend=false"
