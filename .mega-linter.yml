@@ -16,3 +16,6 @@ ENABLE_LINTERS: # If you use ENABLE_LINTERS variable, all other linters will be 
 #PRINT_ALL_FILES: false
 PRE_COMMANDS: 
   - command: "terraform init -backend=false"
+
+TERRAFORM_TFLINT_UNSECURED_ENV_VARIABLES:
+  - GITHUB_TOKEN # Can contain string only, not regex
