@@ -5,6 +5,9 @@ APPLY_FIXES: none
 # ENABLE: # If you use ENABLE variable, all other languages/formats/tooling formats will be disabled by default
 ENABLE_LINTERS: # If you use ENABLE_LINTERS variable, all other linters will be disabled by default
   -   TERRAFORM_TERRASCAN
+
+REPORT_OUTPUT_FOLDER: none
+
 #DISABLE:
   #- CLOUDFORMATION
   # - COPYPASTE # Uncomment to disable checks of excessive copy-pastes
@@ -20,5 +23,3 @@ TERRAFORM_TFLINT_PRE_COMMANDS:
 TERRAFORM_TFLINT_UNSECURED_ENV_VARIABLES:
   - GITHUB_TOKEN # Can contain string only, not regex
 
-EXCLUDED_DIRECTORIES: 
-  -   "/github/workspace/megalinter-reports"
