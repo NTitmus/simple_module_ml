@@ -76,9 +76,6 @@ jobs:
           VALIDATE_TSX: false
           VALIDATE_TYPESCRIPT_ES: false
           VALIDATE_TYPESCRIPT_STANDARD: false
-          VALIDATE_TERRAFORM_FMT: true
-          VALIDATE_TERRAFORM_TFLINT: true
-          VALIDATE_TERRAFORM_TERRASCAN: true
           
       #- name: Mega-Linter
       #  uses: oxsecurity/megalinter@v7
