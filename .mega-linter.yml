@@ -20,4 +20,5 @@ TERRAFORM_TFLINT_PRE_COMMANDS:
 TERRAFORM_TFLINT_UNSECURED_ENV_VARIABLES:
   - GITHUB_TOKEN # Can contain string only, not regex
 
-TERRAFORM_TERRASCAN_DISABLE_ERRORS: true
+EXCLUDED_DIRECTORIES: 
+  -   "/github/workspace/megalinter-reports"
