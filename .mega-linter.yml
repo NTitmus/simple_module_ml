@@ -22,5 +22,5 @@ REPORT_OUTPUT_FOLDER: none
 
 #TERRAFORM_TFLINT_UNSECURED_ENV_VARIABLES:
 #  - GITHUB_TOKEN # Can contain string only, not regex
-TERRAFORM_TERRASCAN_PRE_COMMANDS:
-  - command: "terrascan scan -i terraform"
+#TERRAFORM_TERRASCAN_PRE_COMMANDS:
+#  - command: "terrascan scan -i terraform"
