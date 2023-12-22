@@ -17,9 +17,10 @@ REPORT_OUTPUT_FOLDER: none
 #DISABLE_ERRORS_LINTERS:
   #- PYTHON_BANDIT
 #PRINT_ALL_FILES: false
-TERRAFORM_TFLINT_PRE_COMMANDS: 
-  - command: "terraform init -backend=false"
+#TERRAFORM_TFLINT_PRE_COMMANDS: 
+#  - command: "terraform init -backend=false"
 
-TERRAFORM_TFLINT_UNSECURED_ENV_VARIABLES:
-  - GITHUB_TOKEN # Can contain string only, not regex
-
+#TERRAFORM_TFLINT_UNSECURED_ENV_VARIABLES:
+#  - GITHUB_TOKEN # Can contain string only, not regex
+TERRAFORM_TERRASCAN_PRE_COMMANDS:
+  - command: "terrascan scan -i terraform"
